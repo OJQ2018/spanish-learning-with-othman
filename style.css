@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin:0; padding:20px; font-family:Arial,sans-serif; background:#f2f4f7; color:#222; }
+.container { max-width:900px; margin:0 auto; }
+h1 { text-align:center; margin-bottom:25px; }
+#searchInput { width:100%; padding:15px; margin-bottom:20px; border:1px solid #ccc; border-radius:10px; font-size:16px; outline:none; }
+#searchInput:focus { border-color:#555; }
+#phrases-list { display:flex; flex-direction:column; gap:12px; }
+.phrase-card { background:white; padding:18px; border-radius:12px; display:flex; align-items:center; justify-content:space-between; gap:15px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+.text-content { flex:1; }
+.spanish { direction:ltr; text-align:left; font-size:20px; font-weight:bold; margin-bottom:8px; }
+.arabic { direction:rtl; text-align:right; font-size:17px; }
+.phrase-card button { border:none; border-radius:8px; padding:10px 14px; background:#333; color:white; cursor:pointer; font-size:14px; }
+.phrase-card button:hover { opacity:.85; }
+@media (max-width:600px) { .phrase-card { flex-direction:column; align-items:stretch; } .phrase-card button { width:100%; } }
